@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="465.0" prefWidth="445.0" style="-fx-border-radius: 5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.Controller.Controlller_Employe.Employe_ajouterController">
+   <children>
+      <VBox layoutX="5.0" layoutY="3.0" prefHeight="488.0" prefWidth="467.0" spacing="15.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Civilite" />
+            <HBox minHeight="26.0" prefHeight="26.0" prefWidth="279.0" spacing="40.0">
+               <children>
+                  <RadioButton fx:id="radioButton1" mnemonicParsing="false" prefHeight="23.0" prefWidth="53.0" text="Mr" />
+                  <RadioButton fx:id="radioButton2" mnemonicParsing="false" prefHeight="23.0" prefWidth="62.0" text="Mlle" />
+                  <RadioButton fx:id="radioButton3" layoutX="120.0" layoutY="10.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="67.0" text="Mme" />
+               </children>
+            </HBox>
+            <Text layoutX="16.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+            <TextField fx:id="tNumEmp" layoutX="16.0" layoutY="118.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+            <TextField fx:id="tNom" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom" />
+            <TextField fx:id="tPrenom" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mail" />
+            <TextField fx:id="tMail" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Poste" />
+            <TextField fx:id="tPoste" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lieu" />
+            <ComboBox fx:id="tLieu" minHeight="33.0" prefHeight="33.0" prefWidth="431.0" />
+            <HBox prefHeight="46.0" prefWidth="344.0" spacing="30.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addEmploye" prefHeight="42.0" prefWidth="124.0" text="Ajouter" />
+                  <Button fx:id="closeBtn" mnemonicParsing="false" onAction="#closeAction" prefHeight="43.0" prefWidth="122.0" style="-fx-background-color: red;" text="Retour" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="6.0" right="6.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

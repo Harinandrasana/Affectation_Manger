@@ -1,0 +1,32 @@
+module com.example.projet8java {
+    requires javafx.controls;
+    requires org.apache.pdfbox;
+    requires javafx.fxml;
+    requires java.sql;
+    requires java.mail;
+    requires java.desktop;
+    opens ch.makery.address to javafx.fxml;
+    exports ch.makery.address;
+    exports ch.makery.address.Controller;
+    opens ch.makery.address.Controller to javafx.fxml;
+    exports ch.makery.address.model;
+    opens ch.makery.address.model to javafx.fxml;
+    exports ch.makery.address.model.modelEmploye;
+    opens ch.makery.address.model.modelEmploye to javafx.fxml;
+    exports ch.makery.address.model.modelLieu;
+    opens ch.makery.address.model.modelLieu to javafx.fxml;
+    exports ch.makery.address.model.modelAffectation;
+    opens ch.makery.address.model.modelAffectation to javafx.fxml;
+    exports ch.makery.address.Controller.Controller_Affection;
+    opens ch.makery.address.Controller.Controller_Affection to javafx.fxml;
+    exports ch.makery.address.Controller.Controlller_Employe;
+    opens ch.makery.address.Controller.Controlller_Employe to javafx.fxml;
+    exports ch.makery.address.Controller.Controller_Lieu;
+    opens ch.makery.address.Controller.Controller_Lieu to javafx.fxml;
+    exports ch.makery.address.model.modelEmploye.EmployeManager;
+    opens ch.makery.address.model.modelEmploye.EmployeManager to javafx.fxml;
+    exports ch.makery.address.model.modelAffectation.AffectationManager;
+    opens ch.makery.address.model.modelAffectation.AffectationManager to javafx.fxml;
+    exports ch.makery.address.model.modelLieu.PlaceManager;
+    opens ch.makery.address.model.modelLieu.PlaceManager to javafx.fxml;
+}

@@ -1,0 +1,17 @@
+.button {
+    -fx-background-color: #ff0000;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.table-view {
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: lightgray;
+}
+
+.table-cell {
+    -fx-alignment: center;
+}
